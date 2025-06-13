@@ -1,34 +1,97 @@
 {% extends "base.html" %}
-{% block content_title %}{% endblock %}
-{% block content %}        
-{% if articles %}
-    {% for article in articles %}        
 
-        {# First item #}
-        {% if loop.first %}
-            <header>
-            <h1><a href="{{ SITEURL }}" id="site-title"> {# {{ SITENAME }} #} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a> {#:#} <a href="{{ SITEURL }}/{{ article.url }}" id="page-title">{{ article.title }}</a></h1>
-                {% if not HIDE_DATE %}<time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>{% endif %}
-            </header>
+{% block title %}{{ SITENAME }}{% if SITESUBTITLE %} - {{ SITESUBTITLE }}{% endif %}{% endblock %}
 
-            <article>
-                {{ article.content }}{% include 'comments.html' %}
-            </article>
-            {% if loop.length > 1 %}
-                <section id="article-list">
-                    <h2>All posts</h2>
-                    <ol>
-            {% endif %}
-        {# other items #}
-        {% else %} 
-            <li><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}">{{ article.title }}</a></li>
-        {% endif %}
-        {% if loop.length > 1 %}
-        </ol>
-        </section><!-- #article-list -->
-        {% endif %}
+{% block content %}
+<div class="hero-section">
+    <h1>¡Bienvenido a {{ SITENAME }}!</h1>
+    {% if SITESUBTITLE %}
+        <p class="subtitle">{{ SITESUBTITLE }}</p>
+    {% endif %}
+    
+    <div class="intro">
+        <p>Hola, soy <strong>{{ AUTHOR }}</strong>, y este es mi espacio personal donde comparto conocimientos sobre <strong>ML</strong> y <strong>AI</strong>, enfocandome en <strong>Sistemas de Pago</strong>.</p>
+    </div>
+</div>
+
+<div class="topics-section">
+    <h2>¿Qué encontrarás aquí?</h2>
+    
+    <div class="topic-grid">
+        <div class="topic">
+            <h3>Tutoriales de ML y AI</h3>
+            <p>Guías paso a paso para algoritmos de Machine Learning y Artificial Intelligence utilizando información de organismos públicos nacionales e internacionales.</p>
+        </div>
+        
+        <div class="topic">
+            <h3> Modelos avanzados</h3>
+            <p>Replicaciones de modelos más avanzados utilizando avances academicos recientes en ML y  AI.</p>
+        </div>
+        
+        <div class="topic">
+            <h3> Opiniones</h3>
+            <p>Pensamientos personales en temas más allá de la Economía y la Ciencia de Datos.</p>
+        </div>
+    </div>
+</div>
+
+<div class="recent-posts">
+    <h2>Últimos Posts</h2>
+    
+    {% for article in articles[:3] %}
+        <article class="post-item">
+            <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+            <time>{{ article.locale_date }}</time>
+            <p>{{ article.summary|striptags|truncate(120) }}</p>
+        </article>
     {% endfor %}
-{% else %}
-    No posts found.
-{% endif %}
-{% endblock content %}
+    
+    <p><a href="{{ SITEURL }}/archives.html" class="view-all">Ver todos los posts →</a></p>
+</div>
+
+<style>
+.hero-section {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 2rem;
+    gap: 1rem;
+    border: 1px solid #ccc;
+}
+
+.topic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.topic {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background: #f9f9f9;
+}
+
+.recent-posts {
+    margin: 2rem 0;
+}
+
+.post-item {
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+}
+
+.post-item h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.post-item time {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.view-all {
+    font-weight: bold;
+    color: #333;
+}
+</style>
+{% endblock %}
