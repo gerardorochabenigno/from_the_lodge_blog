@@ -3,7 +3,7 @@
     command = 'pip install -r requirements.txt && pelican content -s publishconf.py'
 
 [build.environment]
-    PYTHON_VERSION = 3.10
+    PYTHON_VERSION = "3.10"
 
 [[redirects]]
     from = '/posts/*'
