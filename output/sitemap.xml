@@ -5,99 +5,99 @@ xmlns:xhtml="http://www.w3.org/1999/xhtml"
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>/</loc>
-<lastmod>2025-06-12T18:05:49-00:00</lastmod>
+<loc>https://fromthelodge.netlify.app/</loc>
+<lastmod>2025-06-12T18:18:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/acerca-de-mi.html</loc>
-<lastmod>2025-06-12T18:05:49-00:00</lastmod>
+<loc>https://fromthelodge.netlify.app/acerca-de-mi.html</loc>
+<lastmod>2025-06-12T18:18:56-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/archives.html</loc>
-<lastmod>2025-06-12T18:05:49-00:00</lastmod>
+<loc>https://fromthelodge.netlify.app/archives.html</loc>
+<lastmod>2025-06-12T18:18:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/author/gerardo-rocha-benigno.html</loc>
-<lastmod>2025-06-12T18:05:49-00:00</lastmod>
+<loc>https://fromthelodge.netlify.app/author/gerardo-rocha-benigno.html</loc>
+<lastmod>2025-06-12T18:18:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/authors.html</loc>
-<lastmod>2025-06-12T18:05:49-00:00</lastmod>
+<loc>https://fromthelodge.netlify.app/authors.html</loc>
+<lastmod>2025-06-12T18:18:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/categories.html</loc>
-<lastmod>2025-06-12T18:05:49-00:00</lastmod>
+<loc>https://fromthelodge.netlify.app/categories.html</loc>
+<lastmod>2025-06-12T18:18:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/general.html</loc>
-<lastmod>2025-06-12T18:05:49-00:00</lastmod>
+<loc>https://fromthelodge.netlify.app/category/general.html</loc>
+<lastmod>2025-06-12T18:18:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/posts/2025/06/mi-primer-post.html</loc>
+<loc>https://fromthelodge.netlify.app/posts/2025/06/mi-primer-post.html</loc>
 <lastmod>2025-06-10T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/posts/2025/06/sie-banxico-extractor-python.html</loc>
+<loc>https://fromthelodge.netlify.app/posts/2025/06/sie-banxico-extractor-python.html</loc>
 <lastmod>2025-06-12T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/blog.html</loc>
-<lastmod>2025-06-12T18:05:49-00:00</lastmod>
+<loc>https://fromthelodge.netlify.app/tag/blog.html</loc>
+<lastmod>2025-06-12T18:18:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/inicio.html</loc>
-<lastmod>2025-06-12T18:05:49-00:00</lastmod>
+<loc>https://fromthelodge.netlify.app/tag/inicio.html</loc>
+<lastmod>2025-06-12T18:18:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/pelican.html</loc>
-<lastmod>2025-06-12T18:05:49-00:00</lastmod>
+<loc>https://fromthelodge.netlify.app/tag/pelican.html</loc>
+<lastmod>2025-06-12T18:18:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/sie.html</loc>
-<lastmod>2025-06-12T18:05:49-00:00</lastmod>
+<loc>https://fromthelodge.netlify.app/tag/sie.html</loc>
+<lastmod>2025-06-12T18:18:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tags.html</loc>
-<lastmod>2025-06-12T18:05:49-00:00</lastmod>
+<loc>https://fromthelodge.netlify.app/tags.html</loc>
+<lastmod>2025-06-12T18:18:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
