@@ -10,4 +10,4 @@ RELATIVE_URLS = False
 FEED_ALL_ATOM = "feeds/all.atom.xml"
 CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
 
-delete_output_directory = True
+DELETE_OUTPUT_DIRECTORY = True
